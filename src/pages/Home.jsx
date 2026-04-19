@@ -90,7 +90,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.6 }} className="flex justify-center gap-3 mt-8">
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/al-qassimi-cardio-club-23a97a3b9/" target="_blank" rel="noopener noreferrer"
               className="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-[#C1AC84] hover:bg-[#A8885C]/20 transition-colors">
               <FaLinkedinIn size={16} />
             </a>

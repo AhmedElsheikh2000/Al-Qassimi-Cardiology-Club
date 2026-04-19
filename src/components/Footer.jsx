@@ -47,7 +47,7 @@ export default function Footer() {
             <h4 className="text-[#C1AC84] font-display font-semibold mb-4 text-sm uppercase tracking-wider">Connect</h4>
             <div className="flex gap-3 mb-5">
               <a
-                href="https://www.linkedin.com/feed/"
+                href="https://www.linkedin.com/in/al-qassimi-cardio-club-23a97a3b9/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-[#1A1A2E] border border-[#A8885C]/30 flex items-center justify-center text-[#C1AC84] hover:bg-[#A8885C]/20 transition-colors"

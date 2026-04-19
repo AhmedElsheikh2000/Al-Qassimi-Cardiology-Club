@@ -7,10 +7,10 @@ import { BsFillCalendarEventFill } from 'react-icons/bs'
 import RegistrationForm from '../components/RegistrationForm'
 
 const perks = [
-  { icon: '📡', title: 'Live Webinar Access', desc: 'Join the session live on Zoom with real-time Q&A.' },
-  { icon: '🎓', title: 'CME Credits', desc: 'Earn accredited CME credits upon completion.' },
-  { icon: '🌍', title: 'International Faculty', desc: 'Learn from world-class cardiologists.' },
-  { icon: '📜', title: 'Certificate', desc: 'Official attendance certificate issued digitally.' },
+  { title: 'Live Webinar Access', desc: 'Join the session live on Zoom with real-time Q&A.' },
+  { title: 'CME Credits', desc: 'Earn accredited CME credits upon completion.' },
+  { title: 'International Faculty', desc: 'Learn from world-class cardiologists.' },
+  { title: 'Certificate', desc: 'Official attendance certificate issued digitally.' },
 ]
 
 export default function Register() {
@@ -82,7 +82,7 @@ export default function Register() {
                     Live Webinar
                   </span>
                   <span className="flex items-center gap-1 text-[10px] text-[#C1AC84] bg-[#A8885C]/15 border border-[#A8885C]/30 px-2.5 py-1 rounded-full">
-                    <BsFillCalendarEventFill size={9} /> April 24, 2025
+                    <BsFillCalendarEventFill size={9} /> April 24, 2026
                   </span>
                 </div>
                 <h3 className="font-display font-bold text-white text-lg leading-snug mb-1">
@@ -118,7 +118,7 @@ export default function Register() {
                   transition={{ delay: 0.4 + i * 0.07 }}
                   className="flex items-start gap-3"
                 >
-                  <span className="text-xl leading-none">{p.icon}</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#C1AC84] shrink-0 mt-1.5" />
                   <div>
                     <p className="text-white text-xs font-semibold">{p.title}</p>
                     <p className="text-slate-500 text-[11px]">{p.desc}</p>
@@ -142,7 +142,7 @@ export default function Register() {
                   <FaFacebookF size={11} /> Follow us
                 </a>
                 <span className="text-slate-700">·</span>
-                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/al-qassimi-cardio-club-23a97a3b9/" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-[#C1AC84] text-[11px] hover:underline">
                   <FaLinkedinIn size={11} /> LinkedIn
                 </a>

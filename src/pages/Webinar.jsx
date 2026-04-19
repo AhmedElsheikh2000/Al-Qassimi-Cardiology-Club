@@ -12,10 +12,10 @@ import { FaUserTie } from 'react-icons/fa'
 // ── Webinar config ────────────────────────────────────────────
 const WEBINAR = {
   title: 'Wave 1 — Al Qassimi Cardiology Club',
-  subtitle: 'Advanced Cardiology Symposium 2025',
-  date: 'April 24, 2025',
-  // April 24 2025 at 18:00 Dubai time (UTC+4)
-  dateObj: new Date('2025-04-24T18:00:00+04:00'),
+  subtitle: 'Advanced Cardiology Symposium 2026',
+  date: 'April 24, 2026',
+  // April 24 2026 at 18:00 Dubai time (UTC+4)
+  dateObj: new Date('2026-04-24T18:00:00+04:00'),
   time: '6:00 PM',
   timezone: 'Dubai Time (UTC+4)',
   duration: '2 Hours',
@@ -350,7 +350,7 @@ export default function Webinar() {
             Join the Webinar on Zoom
             <MdOpenInNew className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
-          <p className="text-slate-500 text-xs mt-3">April 24, 2025 · 6:00 PM Dubai Time (UTC+4)</p>
+          <p className="text-slate-500 text-xs mt-3">April 24, 2026 · 6:00 PM Dubai Time (UTC+4)</p>
         </div>
       </section>
     </>
