@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@theme {
+  /* Brand gold tones from palette */
+  --color-gold-light: #C1AC84;
+  --color-gold: #A8885C;
+  --color-gold-dark: #8A6E3E;
+
+  /* Sky blue */
+  --color-sky: #66C7E9;
+  --color-sky-bright: #30B8E6;
+
+  /* Accent palette */
+  --color-accent-red: #E64D58;
+  --color-accent-green: #3DC47E;
+  --color-accent-purple: #BF58BB;
+  --color-accent-yellow: #FED65A;
+
+  /* Backgrounds */
+  --color-navy-900: #0D0D1A;
+  --color-navy-800: #1A1A2E;
+  --color-navy-700: #16213E;
+
+  --font-display: 'Cinzel', serif;
+  --font-body: 'NotoSans', 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0D0D1A;
+  color: #e2e8f0;
+  font-family: 'NotoSans', 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+/* Gold gradient text */
+.gold-gradient {
+  background: linear-gradient(135deg, #C1AC84 0%, #A8885C 50%, #C1AC84 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle gold border */
+.gold-border {
+  border: 1px solid rgba(168, 136, 92, 0.4);
+}
+
+/* Glass card using dark navy */
+.glass-card {
+  background: rgba(26, 26, 46, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(168, 136, 92, 0.2);
+}
+
+/* Pulsing LIVE badge */
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.65; transform: scale(1.2); }
+}
+.pulse-live {
+  animation: pulse-live 1.5s ease-in-out infinite;
+}
+
+/* Primary filled gold button */
+.btn-gold {
+  background: linear-gradient(135deg, #C1AC84, #A8885C, #C1AC84);
+  background-size: 200% auto;
+  color: #0D0D1A;
+  font-weight: 600;
+  transition: background-position 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-gold:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(168, 136, 92, 0.45);
+}
+
+/* Outline gold button */
+.btn-outline-gold {
+  border: 1.5px solid #A8885C;
+  color: #C1AC84;
+  transition: all 0.2s ease;
+}
+.btn-outline-gold:hover {
+  background: rgba(168, 136, 92, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(168, 136, 92, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0D0D1A; }
+::-webkit-scrollbar-thumb { background: #A8885C; border-radius: 3px; }
